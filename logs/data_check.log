@@ -1,0 +1,156 @@
+2021-01-12 08:51:40,162 [INFO] data check function initialized
+2021-01-12 08:52:35,253 [INFO] data check function initialized
+2021-01-12 08:53:14,750 [INFO] data check function initialized
+2021-01-12 08:54:14,068 [INFO] data check function initialized
+2021-01-12 09:00:49,227 [INFO] data check function initialized
+2021-01-12 09:01:11,810 [INFO] data check function initialized
+2021-01-12 09:05:32,478 [INFO] data check function initialized
+2021-01-12 09:07:20,807 [INFO] data check function initialized
+2021-01-12 09:07:24,374 [INFO] data check function initialized
+2021-01-12 09:07:46,907 [INFO] data check function initialized
+2021-01-12 10:38:20,388 [INFO] data check function initialized
+2021-01-12 10:38:20,390 [INFO] data check function finished
+2021-01-12 10:40:56,680 [INFO] data check function initialized
+2021-01-12 10:40:56,682 [ERROR] Data Error in Column name:num1 and Row number:1
+2021-01-12 19:18:04,255 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:18:58,527 [INFO] 178.17.232.146 - - [12/Jan/2021 19:18:58] "[31m[1mPOST /file_validation HTTP/1.1[0m" 405 -
+2021-01-12 19:19:40,270 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:20:34,300 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:20:41,746 [INFO] data check function initialized
+2021-01-12 19:20:41,748 [ERROR] Data Error in Column name:num1 and Row number:1
+2021-01-12 19:20:41,749 [INFO] 178.17.232.146 - - [12/Jan/2021 19:20:41] "[37mGET /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:21:09,444 [INFO] data check function initialized
+2021-01-12 19:21:09,446 [INFO] data check function finished
+2021-01-12 19:21:09,447 [INFO] 178.17.232.146 - - [12/Jan/2021 19:21:09] "[37mGET /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:29:47,572 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:31:57,789 [INFO] 178.17.232.146 - - [12/Jan/2021 19:31:57] "[31m[1mPOST /file_validation HTTP/1.1[0m" 400 -
+2021-01-12 19:32:06,091 [INFO] 178.17.232.146 - - [12/Jan/2021 19:32:06] "[31m[1mPOST /file_validation HTTP/1.1[0m" 400 -
+2021-01-12 19:32:16,634 [INFO] data check function initialized
+2021-01-12 19:32:16,636 [ERROR] Exception on /file_validation [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib64/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ec2-user/environment/Authentication/datapipelines/api.py", line 16, in fileValidation
+    data_validated, message = dv.data_check(file, 'csv')
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidation.py", line 29, in data_check
+    original_data = StringIO(str(file_data,'utf-8'))
+TypeError: decoding to str: need a bytes-like object, FileStorage found
+2021-01-12 19:32:16,642 [INFO] 178.17.232.146 - - [12/Jan/2021 19:32:16] "[35m[1mPOST /file_validation HTTP/1.1[0m" 500 -
+2021-01-12 19:35:10,957 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:35:24,004 [INFO] data check function initialized
+2021-01-12 19:35:24,006 [ERROR] Exception on /file_validation [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib64/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ec2-user/environment/Authentication/datapipelines/api.py", line 17, in fileValidation
+    data_validated, message = dv.data_check(file, 'csv')
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidation.py", line 29, in data_check
+    original_data = StringIO(str(file_data,'utf-8'))
+TypeError: decoding to str: need a bytes-like object, FileStorage found
+2021-01-12 19:35:24,008 [INFO] 178.17.232.146 - - [12/Jan/2021 19:35:24] "[35m[1mPOST /file_validation HTTP/1.1[0m" 500 -
+2021-01-12 19:39:47,620 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:39:55,200 [INFO] data check function initialized
+2021-01-12 19:39:55,201 [INFO] data check function finished
+2021-01-12 19:39:55,202 [INFO] 178.17.232.146 - - [12/Jan/2021 19:39:55] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:40:47,326 [INFO] data check function initialized
+2021-01-12 19:40:47,327 [ERROR] Data Error in Column name:num1 and Row number:3
+Data Error in Column name:num3 and Row number:3
+2021-01-12 19:40:47,328 [INFO] 178.17.232.146 - - [12/Jan/2021 19:40:47] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:43:04,396 [INFO] 209.141.58.37 - - [12/Jan/2021 19:43:04] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+2021-01-12 19:47:44,454 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:48:00,453 [INFO] data check function initialized
+2021-01-12 19:48:00,455 [INFO] data check function finished
+2021-01-12 19:48:00,458 [INFO] 178.17.232.146 - - [12/Jan/2021 19:48:00] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:48:08,550 [INFO] data check function initialized
+2021-01-12 19:48:08,551 [INFO] data check function finished
+2021-01-12 19:48:08,552 [INFO] 178.17.232.146 - - [12/Jan/2021 19:48:08] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:48:48,869 [INFO] data check function initialized
+2021-01-12 19:48:48,871 [ERROR] Data Error in Column name:num3 and Row number:3
+2021-01-12 19:48:48,872 [INFO] 178.17.232.146 - - [12/Jan/2021 19:48:48] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:49:35,410 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:49:39,657 [INFO] data check function initialized
+2021-01-12 19:49:39,659 [ERROR] Data Error in Column name:xxxnum3 and Row number:3
+2021-01-12 19:49:39,660 [INFO] 178.17.232.146 - - [12/Jan/2021 19:49:39] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:50:26,928 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:50:31,611 [INFO] data check function initialized
+2021-01-12 19:50:31,612 [ERROR] Data Errorxxxin Column name:num3 and Row number:3
+2021-01-12 19:50:31,613 [INFO] 178.17.232.146 - - [12/Jan/2021 19:50:31] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:51:03,865 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 19:51:08,033 [INFO] data check function initialized
+2021-01-12 19:51:08,034 [ERROR] Data Error xxx in Column name:num3 and Row number:3
+2021-01-12 19:51:08,035 [INFO] 178.17.232.146 - - [12/Jan/2021 19:51:08] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
+2021-01-12 19:58:03,926 [INFO] 103.251.248.130 - - [12/Jan/2021 19:58:03] "[33mGET / HTTP/1.1[0m" 404 -
+2021-01-12 20:13:55,472 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 20:14:03,313 [INFO] data check function initialized
+2021-01-12 20:14:03,314 [ERROR] Exception on /file_validation [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib64/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ec2-user/environment/Authentication/datapipelines/api.py", line 16, in fileValidation
+    data_validated, message = dv.data_check(data, 'csv')
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidation.py", line 52, in data_check
+    error_messages.append('Data Error '+ msg1 + msg2 +' in Column name:' + column + ' and Row number:' + str(index + 1))
+TypeError: can only concatenate str (not "bool") to str
+2021-01-12 20:14:03,317 [INFO] 178.17.232.146 - - [12/Jan/2021 20:14:03] "[35m[1mPOST /file_validation HTTP/1.1[0m" 500 -
+2021-01-12 20:15:26,406 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 20:15:34,044 [INFO] data check function initialized
+2021-01-12 20:15:34,045 [ERROR] Exception on /file_validation [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib64/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ec2-user/environment/Authentication/datapipelines/api.py", line 16, in fileValidation
+    data_validated, message = dv.data_check(data, 'csv')
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidation.py", line 52, in data_check
+    error_messages.append('Data Error '+ msg1 + msg2 +' in Column name:' + column + ' and Row number:' + str(index + 1))
+TypeError: can only concatenate str (not "bool") to str
+2021-01-12 20:15:34,047 [INFO] 178.17.232.146 - - [12/Jan/2021 20:15:34] "[35m[1mGET /file_validation HTTP/1.1[0m" 500 -
+2021-01-12 20:19:44,290 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-12 20:19:52,911 [INFO] data check function initialized
+2021-01-12 20:19:52,913 [ERROR] Data Error for number in Column name:entity and Row number:1
+Data Error for number in Column name:report_name and Row number:1
+Data Error for number in Column name:entity and Row number:2
+Data Error for number in Column name:report_name and Row number:2
+Data Error for number in Column name:entity and Row number:3
+Data Error for number in Column name:report_name and Row number:3
+Data Error for number in Column name:num3 and Row number:3
+2021-01-12 20:19:52,914 [INFO] 178.17.232.146 - - [12/Jan/2021 20:19:52] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
