@@ -1,6 +1,8 @@
 # Report columns rules
-reports = {
-    'HSBC_Volumes_monthly': ['0', '100'],
-    'Barclays_Volumes_monthly': ['0', '100'],
-    'Nationwide': ['0', '100']
+filenames = {
+    'HSBC_volumes_monthly': {'max_limit': 5, 'min_limit': 3},
+    'Barclays_volumes_monthly': {'max_limit': 5, 'min_limit': 3},
+    'Nationwide_volumes_monthly': {'max_limit': 5, 'min_limit': 3},
 }
+
+filename_template = 'EntityName_ReportName_Frequency_Timestamp.ext'

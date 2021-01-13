@@ -3,18 +3,15 @@ import fileReconciliation as recon
 
 app = Flask(__name__)
 
-@app.route('/file_recon', methods=['POST'])
-def fileValidation():
+@app.route('/recon', methods=['POST'])
+def fileRecon():
     
-    #file = open("HSBC_Volumes_monthly_121212.csv", "rb")
-    #data = file.read()
+    fileDetail = request.get_json()
+    fileName = fileDetail['fileName']
+    data_validated, message = recon.recon(fileName)
     
-    file = request.files['file']
-    data = file.read()
-    
-    data_validated, message = recon.data_check(data, 'csv')
     if data_validated:
-        return 'File is valid'
+        return message
     else:
         return message
 

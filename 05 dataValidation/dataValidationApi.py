@@ -13,6 +13,7 @@ def fileValidation():
     data = file.read()
     
     data_validated, message = dv.data_check(data, 'csv')
+    
     if data_validated:
         return 'File is valid'
     else:

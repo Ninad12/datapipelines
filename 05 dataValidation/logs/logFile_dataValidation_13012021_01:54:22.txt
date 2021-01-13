@@ -1,2 +1,0 @@
-2021-01-13 01:54:22,488 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
-2021-01-13 01:54:33,005 [INFO] 178.17.232.146 - - [13/Jan/2021 01:54:33] "[37mPOST /file_validation HTTP/1.1[0m" 200 -
