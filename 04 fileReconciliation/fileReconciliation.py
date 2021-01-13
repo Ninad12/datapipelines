@@ -15,10 +15,14 @@ def recon(filename):
 
     if split_filename[-1] == 'csv':
         reader = list(csv.reader(original_data, delimiter=','))
+    
+    configfileName = '_'.join(get_split_filename[:-1])
 
-    file_limit_detail = config.filenames['_'.join(get_split_filename[:-1])]
-
-    if (len(reader) > file_limit_detail['max_limit'] or len(reader) < file_limit_detail['min_limit']):
-        return (False, 'File Recon check failed')
-
-    return  (True, 'File data limit is valid')
+    if configfileName in config.filenames.keys():
+        
+        file_limit_detail = config.filenames[configfileName]
+        if (len(reader) > file_limit_detail['max_limit'] or len(reader) < file_limit_detail['min_limit']):
+            return (False, 'File Recon check failed')
+    
+        return (True, 'File data limit is valid')
+    return (False, 'File not found')
