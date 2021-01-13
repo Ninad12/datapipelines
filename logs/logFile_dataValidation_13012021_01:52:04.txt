@@ -1,0 +1,4 @@
+2021-01-13 01:52:04,851 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-13 01:52:18,379 [INFO] data check function initialized
+2021-01-13 01:52:18,381 [INFO] data check function finished
+2021-01-13 01:52:18,383 [INFO] 178.17.232.146 - - [13/Jan/2021 01:52:18] "[37mPOST /file_validation HTTP/1.1[0m" 200 -

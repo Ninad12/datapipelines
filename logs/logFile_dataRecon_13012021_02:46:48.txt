@@ -1,0 +1,4 @@
+INFO: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:data check function initialized
+ERROR:Less data as compared to prev submissions
+INFO:178.17.232.146 - - [13/Jan/2021 02:46:55] "[37mPOST /file_recon HTTP/1.1[0m" 200 -

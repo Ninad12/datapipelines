@@ -1,0 +1,22 @@
+2021-01-13 01:50:42,297 [INFO]  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2021-01-13 01:50:55,248 [INFO] data check function initialized
+2021-01-13 01:50:55,250 [ERROR] Exception on /file_validation [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib64/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib64/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidationApi.py", line 15, in fileValidation
+    data_validated, message = dv.data_check(data, 'csv')
+  File "/home/ec2-user/environment/Authentication/datapipelines/dataValidation.py", line 46, in data_check
+    null_check = rules.null_check(config.columns_rules[column], row[column])
+NameError: name 'rules' is not defined
+2021-01-13 01:50:55,253 [INFO] 178.17.232.146 - - [13/Jan/2021 01:50:55] "[35m[1mPOST /file_validation HTTP/1.1[0m" 500 -

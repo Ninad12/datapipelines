@@ -1,5 +1,5 @@
 import re
-import config
+import fileAuthenticationConfig as config
 
 
 def filename_validation(filename):
